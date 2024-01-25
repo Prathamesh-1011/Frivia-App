@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Frivia',
       theme: ThemeData(
-        fontFamily: 'ArchitectsDaughters',
+        fontFamily: 'ArchitectsDaughter',
         scaffoldBackgroundColor: const Color.fromRGBO(
           31,
           31,
