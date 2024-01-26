@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable, no_leading_underscores_for_local_identifiers
+
 import 'package:flutter/material.dart';
 import 'package:frivia/provider/game_page_provider.dart';
 import 'package:provider/provider.dart';
@@ -9,7 +11,7 @@ class GamePage extends StatelessWidget {
 
   GamePageProvider? _pageProvider;
 
-  GamePage({required this.difficultyLevel});
+  GamePage({super.key, required this.difficultyLevel});
 
   @override
   Widget build(BuildContext context) {

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:frivia/pages/game_page.dart';
 import 'package:frivia/pages/home_page.dart';
