@@ -8,6 +8,7 @@ class GamePageProvider extends ChangeNotifier {
   final int _maxQuestions = 10;
 
   List? questions;
+  int _currentQuestionCount = 0;
 
   BuildContext context;
   GamePageProvider({required this.context}) {
@@ -28,5 +29,10 @@ class GamePageProvider extends ChangeNotifier {
       _response.toString(),
     );
     questions = _data["results"];
+    notifyListeners();
+  }
+
+  String getCurrentQuestionText() {
+    return questions![_currentQuestionCount]["question"];
   }
 }
